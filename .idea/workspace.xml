@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e04ae6d-938d-41b5-889a-bce3fbabf5cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-common/src/main/java/org/star/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-common/src/main/java/org/star/common/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-common/src/main/java/org/star/common/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-common/src/test/java/org/star/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-consumer/src/main/java/org/star/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-consumer/src/main/java/org/star/consumer/EasyConsumerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-consumer/src/test/java/org/star/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/model/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/model/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/proxy/ServiceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/proxy/ServiceProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/registry/LocalRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/serializer/JdkSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/serializer/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/server/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/server/HttpServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/main/java/org/star/starpc/server/VertxHttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-easy/src/test/java/org/star/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-provider/src/main/java/org/star/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-provider/src/main/java/org/star/provider/EasyProviderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-provider/src/main/java/org/star/provider/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc-provider/src/test/java/org/star/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-rpc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,26 +34,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Debug",
-    "Application.EasyConsumerExample.executor": "Debug",
-    "Application.EasyProviderExample.executor": "Debug",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.EasyConsumerExample.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.EasyProviderExample.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -107,7 +72,8 @@
       <workItem from="1710633376828" duration="2665000" />
       <workItem from="1710698184990" duration="28000" />
       <workItem from="1710698220575" duration="52000" />
-      <workItem from="1710698285544" duration="2977000" />
+      <workItem from="1710698285544" duration="3340000" />
+      <workItem from="1710708202252" duration="7000" />
     </task>
     <servers />
   </component>
