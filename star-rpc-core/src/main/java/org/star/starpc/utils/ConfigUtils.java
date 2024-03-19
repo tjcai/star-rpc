@@ -31,6 +31,7 @@ public class ConfigUtils {
         }
         configStringBuilder.append(".properties");
         Props props = new Props(configStringBuilder.toString());
+        props.autoLoad(true);
         return props.toBean(clazz, prefix);
     }
 }
