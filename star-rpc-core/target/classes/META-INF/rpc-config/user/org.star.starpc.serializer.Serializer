@@ -1,0 +1,2 @@
+thi=org.star.starpc.serializer.HessianSerializer
+for=org.star.starpc.serializer.KryoSerializer

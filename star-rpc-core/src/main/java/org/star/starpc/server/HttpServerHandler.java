@@ -4,11 +4,13 @@ import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.http.HttpServerResponse;
+import org.star.starpc.RpcApplication;
 import org.star.starpc.model.RpcRequest;
 import org.star.starpc.model.RpcResponse;
 import org.star.starpc.registry.LocalRegistry;
 import org.star.starpc.serializer.JdkSerializer;
 import org.star.starpc.serializer.Serializer;
+import org.star.starpc.serializer.SerializerFactory;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -21,7 +23,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
 
     @Override
     public void handle(HttpServerRequest request) {
-        final Serializer serializer = new JdkSerializer();
+        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getConfig().getSerializer());
 
         System.out.println("Received request: " + request.method() + " " + request.uri());
 

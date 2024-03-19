@@ -1,0 +1,4 @@
+jdk=org.star.starpc.serializer.JdkSerializer
+json=org.star.starpc.serializer.JsonSerializer
+hessian=org.star.starpc.serializer.HessianSerializer
+kryo=org.star.starpc.serializer.KryoSerializer

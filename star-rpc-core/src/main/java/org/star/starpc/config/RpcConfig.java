@@ -1,6 +1,7 @@
 package org.star.starpc.config;
 
 import lombok.Data;
+import org.star.starpc.serializer.SerializerNames;
 
 @Data
 public class RpcConfig {
@@ -14,4 +15,8 @@ public class RpcConfig {
 
     // 模拟调用（用于测试，不会真正调用远程服务）
     private boolean mock = false;
+
+    // 序列化方式
+    private String serializer = SerializerNames.JDK;
 }
+
