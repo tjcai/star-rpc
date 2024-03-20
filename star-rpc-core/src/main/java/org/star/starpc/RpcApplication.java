@@ -1,8 +1,11 @@
 package org.star.starpc;
 
 import lombok.extern.slf4j.Slf4j;
+import org.star.starpc.config.RegistryConfig;
 import org.star.starpc.config.RpcConfig;
 import org.star.starpc.constant.RpcConstant;
+import org.star.starpc.registry.Registry;
+import org.star.starpc.registry.RegistryFactory;
 import org.star.starpc.utils.ConfigUtils;
 
 @Slf4j
@@ -13,6 +16,12 @@ public class RpcApplication {
     public static void init(RpcConfig newRpcConfig) {
         rpcConfig = newRpcConfig;
         log.info("rpc init, rpcConfig: [{}]", rpcConfig.toString());
+
+        // init registry
+        RegistryConfig registryConfig = rpcConfig.getRegistryConfig();
+        Registry registry = RegistryFactory.getInstance(registryConfig.getRegistry());
+        registry.init(registryConfig);
+        log.info("registry init, registryConfig: [{}]", registryConfig);
     }
 
     public static void init() {
@@ -27,7 +36,7 @@ public class RpcApplication {
         init(newRpcConfig);
     }
 
-    public static RpcConfig getConfig() {
+    public static RpcConfig getRpcConfig() {
         if (rpcConfig == null) {
             synchronized (RpcApplication.class) {
                 if (rpcConfig == null) {

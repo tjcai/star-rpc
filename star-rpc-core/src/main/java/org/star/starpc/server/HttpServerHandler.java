@@ -8,7 +8,6 @@ import org.star.starpc.RpcApplication;
 import org.star.starpc.model.RpcRequest;
 import org.star.starpc.model.RpcResponse;
 import org.star.starpc.registry.LocalRegistry;
-import org.star.starpc.serializer.JdkSerializer;
 import org.star.starpc.serializer.Serializer;
 import org.star.starpc.serializer.SerializerFactory;
 
@@ -23,7 +22,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
 
     @Override
     public void handle(HttpServerRequest request) {
-        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getConfig().getSerializer());
+        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
 
         System.out.println("Received request: " + request.method() + " " + request.uri());
 
