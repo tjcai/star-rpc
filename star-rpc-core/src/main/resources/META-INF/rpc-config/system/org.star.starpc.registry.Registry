@@ -1,1 +1,3 @@
 etcd=org.star.starpc.registry.EtcdRegistry
+zookeeper=org.star.starpc.registry.ZookeeperRegistry
+```

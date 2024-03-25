@@ -22,6 +22,11 @@ public class RpcApplication {
         Registry registry = RegistryFactory.getInstance(registryConfig.getRegistry());
         registry.init(registryConfig);
         log.info("registry init, registryConfig: [{}]", registryConfig);
+
+        // JVM hook for delete services
+        Runtime.getRuntime().addShutdownHook(
+                new Thread(registry::destroy)
+        );
     }
 
     public static void init() {
