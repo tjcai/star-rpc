@@ -6,6 +6,8 @@ import cn.hutool.http.HttpResponse;
 import org.star.starpc.RpcApplication;
 import org.star.starpc.config.RpcConfig;
 import org.star.starpc.constant.RpcConstant;
+import org.star.starpc.loadbalancer.LoadBalancer;
+import org.star.starpc.loadbalancer.LoadBalancerFactory;
 import org.star.starpc.model.RpcRequest;
 import org.star.starpc.model.RpcResponse;
 import org.star.starpc.model.ServiceMetaInfo;
@@ -16,7 +18,9 @@ import org.star.starpc.serializer.SerializerFactory;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 服务代理（JDK 动态代理）
@@ -48,8 +52,12 @@ public class ServiceProxy implements InvocationHandler {
             if (CollUtil.isEmpty(serviceMetaInfoList)) {
                 throw new RuntimeException("no service provided");
             }
-            // TODO: change this hard code 1 st elem
-            ServiceMetaInfo chosenServiceMetaInfo = serviceMetaInfoList.get(0);
+            // load balancer
+            LoadBalancer loadBalancer = LoadBalancerFactory.getInstance(rpcConfig.getLoadBalancer());
+            Map<String, Object> requestParams = new HashMap<>();
+            requestParams.put("methodName", rpcRequest.getMethodName());
+            ServiceMetaInfo chosenServiceMetaInfo = loadBalancer.select(requestParams, serviceMetaInfoList);
+
             try (HttpResponse httpResponse = HttpRequest.post(chosenServiceMetaInfo.getServiceAddr())
                     .body(bytes)
                     .execute()) {

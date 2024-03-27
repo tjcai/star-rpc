@@ -1,0 +1,3 @@
+roundRobin=org.star.starpc.loadbalancer.RoundRobinLoadBalancer
+random=org.star.starpc.loadbalancer.RandomLoadBalancer
+consistentHash=org.star.starpc.loadbalancer.ConsistentHashLoadBalancer

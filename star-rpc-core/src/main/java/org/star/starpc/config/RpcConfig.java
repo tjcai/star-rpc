@@ -1,6 +1,8 @@
 package org.star.starpc.config;
 
 import lombok.Data;
+import org.star.starpc.loadbalancer.LoadBalancer;
+import org.star.starpc.loadbalancer.LoadBalancerKeys;
 import org.star.starpc.serializer.SerializerNames;
 
 @Data
@@ -21,5 +23,8 @@ public class RpcConfig {
 
     // 注册中心配置
     private RegistryConfig registryConfig = new RegistryConfig();
+
+    // 负载均衡策略
+    private String loadBalancer = LoadBalancerKeys.ROUND_ROBIN;
 }
 
