@@ -1,0 +1,4 @@
+failBack=org.star.starpc.fault.tolerant.FailBackTolerantStrategy
+failOver=org.star.starpc.fault.tolerant.FailOverTolerantStrategy
+failFast=org.star.starpc.fault.tolerant.FailFastTolerantStrategy
+failSafe=org.star.starpc.fault.tolerant.FailSafeTolerantStrategy
