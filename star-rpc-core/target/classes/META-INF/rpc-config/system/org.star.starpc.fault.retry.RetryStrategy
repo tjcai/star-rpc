@@ -1,0 +1,3 @@
+no=org.star.starpc.fault.retry.NoRetryStrategy
+fixedInterval=org.star.starpc.fault.retry.FixedIntervalRetryStrategy
+exponentialBackoff=org.star.starpc.fault.retry.ExponentialBackoffRetryStrategy
